@@ -1,0 +1,1 @@
+bbsID:1 AttackCode:%253Cscript%253Ealert('XSS')%253C%252Fscript%253E link: http://192.168.137.221:8080//view/view.jsp?bbsID=1

@@ -1,0 +1,28 @@
+<!doctype html><html lang="ko"><head><title>HTTP 상태 500 – 내부 서버 오류</title><style type="text/css">body {font-family:Tahoma,Arial,sans-serif;} h1, h2, h3, b {color:white;background-color:#525D76;} h1 {font-size:22px;} h2 {font-size:16px;} h3 {font-size:14px;} p {font-size:12px;} a {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>HTTP 상태 500 – 내부 서버 오류</h1><hr class="line" /><p><b>타입</b> 예외 보고</p><p><b>메시지</b> 행 [189]에서 [&#47;view.jsp]을(를) 처리하는 중 예외 발생</p><p><b>설명</b> 서버가, 해당 요청을 충족시키지 못하게 하는 예기치 않은 조건을 맞닥뜨렸습니다.</p><p><b>예외</b></p><pre>org.apache.jasper.JasperException: 행 [189]에서 [&#47;view.jsp]을(를) 처리하는 중 예외 발생
+
+186: 						&lt;tr&gt;
+187: 
+188: 							&lt;td style=&quot;width: 20%;&quot;&gt; 湲� �젣紐� &lt;&#47;td&gt;
+189: 							&lt;td colspan=&quot;2&quot;&gt;&lt;%= bbs.getBbsTitle() %&gt;&lt;&#47;td&gt;
+190: 							&lt;!--  .replaceAll(&quot; &quot;, &quot;&amp;nbsp;&quot;).replaceAll(&quot;&lt;&quot;, &quot;&amp;lt;&quot;).replaceAll(&quot;&gt;&quot;, &quot;&amp;gt;&quot;).replaceAll(&quot;\n&quot;, &quot;&lt;br&#47;&gt;&quot;)  --&gt;
+191: 
+192: 						&lt;&#47;tr&gt;
+
+
+Stacktrace:
+	org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:617)
+	org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:514)
+	org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre><p><b>근본 원인 (root cause)</b></p><pre>java.lang.NullPointerException
+	org.apache.jsp.view_jsp._jspService(view_jsp.java:310)
+	org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:476)
+	org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:386)
+	org.apache.jasper.servlet.JspServlet.service(JspServlet.java:330)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre><p><b>비고</b> 근본 원인(root cause)의 풀 스택 트레이스를, 서버 로그들에서 확인할 수 있습니다.</p><hr class="line" /><h3>Apache Tomcat/8.5.55</h3></body></html>
