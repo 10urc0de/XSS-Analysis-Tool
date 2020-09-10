@@ -1,5 +1,0 @@
-('c:\\users\\rlack\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\beautifulsoup4-4.9.1-py3.8.egg',
- None,
- {'*.py', '*.pyc', '*.pyw', 'EGG-INFO', '*.cp38-win_amd64.pyd', '*.pyd'},
- 'DATA',
- [])

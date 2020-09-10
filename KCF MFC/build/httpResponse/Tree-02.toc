@@ -1,5 +1,0 @@
-('c:\\users\\rlack\\appdata\\local\\programs\\python\\python38\\lib\\site-packages\\soupsieve-2.0.1-py3.8.egg',
- None,
- {'*.cp38-win_amd64.pyd', '*.py', '*.pyc', '*.pyw', 'EGG-INFO', '*.pyd'},
- 'DATA',
- [])
